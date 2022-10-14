@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check For Valid Username</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/index.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <p>Valid Username Checker</p>
+        <a href="{{ url_for('home') }}">Home</a>
+    </nav>
+
+    <div class="flex-container">
+
+        {% block content %}
+
+        {% endblock %}
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/1b20c7f767.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="{{url_for('static', filename='./js/index.js')}}"></script>
+    
+</body>
+</html>

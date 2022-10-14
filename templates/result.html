@@ -1,0 +1,33 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+<div class="result_container">
+
+  <h3 class="result_username">Entered username: {{ user_name }}</h3>
+
+    <ul class="result_list">
+
+        {% if lowercase == False %}
+            <li> <i class="fa-regular fa-circle-xmark"></i> <span>entered username does not have lowercase character</span> </li>
+        {% else %}
+            <li> <i class="fa-solid fa-check"></i> <span>entered username have a lowercase character</span> </li>
+        {% endif %} 
+
+        {% if uppercase == False %}
+            <li> <i class="fa-regular fa-circle-xmark"></i> <span>entered username does not have an uppercase character</span> </li>
+        {% else %}
+            <li> <i class="fa-solid fa-check"></i> <span>entered username have a uppercase character</span> </li>
+        {% endif %} 
+
+        {% if endwithno == False %}
+            <li> <i class="fa-regular fa-circle-xmark"></i> <span>entered username does not end with a number</span> </li>
+        {% else %}
+            <li> <i class="fa-solid fa-check"></i> <span>entered username ends with a number</span> </li>
+        {% endif %}
+
+  </ul>
+
+</div>
+
+{% endblock %}

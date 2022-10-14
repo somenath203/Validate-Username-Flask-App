@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+
+<form class="username_form" action="{{ url_for('result') }}">
+  <input class="form-input" type="text" name="uname" placeholder="enter your username" required />
+  <button class="form-btn" type="submit">Submit</button>
+  <a href="#" class="rules_link">Click here to know the criteria for a username to be valid</a>
+</form>
+
+{% endblock %}
