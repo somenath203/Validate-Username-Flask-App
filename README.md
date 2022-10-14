@@ -9,3 +9,7 @@ In order for a particular username to be valid, it needs to pass three criteria 
 02) Username must contain atleast one lowercase character.
 
 03) Username must end with a number.
+
+# Demo of the application
+
+![Alt text](./demo.gif "Demo Video")
